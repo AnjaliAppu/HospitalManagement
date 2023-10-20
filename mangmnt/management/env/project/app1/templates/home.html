@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <link rel="stylesheet" href="static/style.css">
+    <style>
+        * {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Open Sans";
+  overflow-x: hidden;
+}
+
+.showcase {
+  width: 100%;
+  height: 500px;
+  position: relative;
+  color: white;
+  text-align: center;
+}
+
+.showcase img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index:99
+}
+
+.showcase .overlay {
+  width: 100%;
+  height: 500px;
+  background-color: rgba(0, 35, 82, 0.7);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index:999
+}
+
+.showcase h2 {
+  margin-top: 170px;
+  font-size: 3em;
+}
+
+.showcase p {
+  margin-top: 8px;
+  font-size: 1.2em;
+}
+
+    </style>
+</head>
+
+
+<body>
+<div class="main-wrapper">
+
+
+</div>
+
+
+
+<ul>
+
+    <li><a href="/PatientRegistration">New Registartion</a></li>
+    <li><a href="/viewpatient">View Patients</a></li>
+    <li><a href="/DoctorRegistration"> Doctors Registration</a></li>
+    <li><a href="/viewdoctor"> View Doctors </a></li>
+    <li><a href="/appointment">My Appoinment</a></li>
+    <li><a href="/viewappointment">View Appointment</a></li>
+       <li><a href="/Department">Department </a></li>
+
+    <li><a href="/Disease">  Disease </a></li>
+    <li><a href="/viewdisease"> View Disease </a></li>
+     <!--<li><a href="/viewlogin">View login</a></li>-->
+    <li><a href="/about">About</a></li>
+
+</ul>
+<!--<img align="center" src="static/images/member2.jpg" >-->
+
+</body>
+<section class="showcase">
+  <img src="https://images.unsplash.com/photo-1505410603994-c3ac6269711f?ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80" alt="Picture">
+</section>
+</html>

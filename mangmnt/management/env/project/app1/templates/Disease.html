@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <h2>Disease Information </h2>
+</head>
+<body>
+<form method="POST">
+    {% csrf_token %}
+    <div class="col-md-6">
+           <div id="logbox">
+    <label for="diseasename">Disease Name:</label>
+    <input id="diseasename" type="text" name="diseasename" required style="border: solid 1px;margin-left:10px">
+      <br><br>
+    <label for="symptoms">Symptoms:</label>
+    <input id="symptoms" type="text" name="symptoms" required style="border: solid 1px;margin-left:10px">
+      <br><br>
+    <label for="doctorname">Doctor Name:</label>
+    <input id="doctorname" type="text" name="doctorname" required style="border: solid 1px;margin-left:10px">
+      <br><br>
+    <button type="submit"  name="submit" style="margin-left: 10px" class="inputbutton" >SAVE</button>
+   <!--<button type="submit"  name="submit" style="margin-left: 10px" >ADD</button>
+    <button type="submit"  name="submit" style="margin-left: 10px" >DELETE</button>-->
+
+           </div>
+</div>
+</form>
+</body><br>
+<a href="/home">Home Page</a>
+</html>

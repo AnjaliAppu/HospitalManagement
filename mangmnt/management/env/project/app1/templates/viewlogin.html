@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table>
+    <tr>
+        <th>Id</th>
+
+        <th>user name</th>
+
+        <th>password</th>
+    </tr>
+    {% for result in result %}
+    <tr>
+        <td>{{ result.id }}</td>
+        <td>{{ result.username }}</td>
+        <td>{{ result.password}}</td>
+    </tr>
+    {% endfor %}
+</table>
+
+</body>
+</html>

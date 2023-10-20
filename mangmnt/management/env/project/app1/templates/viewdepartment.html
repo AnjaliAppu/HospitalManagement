@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>View Department</h2>
+<table>
+    <tr>
+        <th>Id</th>
+        <th>Department Number</th>
+        <th>Department Name</th>
+        <th>Description</th>
+
+    </tr>
+    {% for result in result %}
+    <tr>
+        <td>{{ result.id }}</td>
+        <td>{{ result.departmentnumber }}</td>
+        <td>{{ result.departmentname }}</td>
+        <td>{{ result.description }}</td>
+
+
+        <!--<td><a href="editpatient/{{result.id}}"> EDIT</a></td>
+        <td><a href="deletepatient/{{result.id}}"> DELETE</a></td>-->
+
+    </tr>
+    {% endfor %}
+</table>
+
+</body>
+<a href="/home">Home page</a>
+
+</html>
